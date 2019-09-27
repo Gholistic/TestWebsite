@@ -1,0 +1,83 @@
+<!DOCTYPE html><!--This declares that the document is an HTML file-->
+<html lang="en"><!--This is the opening of the html. It's where the html code starts-->
+	<head><!--This is the behind the scenes stuff-->
+		<meta charset="utf-8"/>
+		<title>Commands | Jurassic Bot</title><!--This sets the title of the website which can be seen in the tab-->
+		<link rel="icon" href="../images/icon.png"><!--This sets the tab icon of the website-->
+		<link rel="stylesheet" href="../external/style.css"><!--This links the external css file to this website-->
+	</head>
+
+
+	<body><!--This is the start of the visible stuff-->
+		<header class = "title"><!--This is similar to a div, it works as a container to hold the title. It has the class title so it can be edited with css-->
+			<div><!--this is a div, a container than can be edited independently in css but still works within the bounds of it's outer container-->
+				<h1><!--this is the first heading-->
+					Jurassic Bot
+				</h1>
+
+				<h2><!--this is the second heading-->
+					Commands page
+				</h2>
+			</div>
+		</header>
+		
+		<div class = "pad">
+			<header id = "nav" style="border-bottom: 8px solid rgb(255, 205, 205);"><!--this header has the id nav so it can be styled in css. It has custom css which creates a border-->
+				<div class="container">
+					<img class="logo" src="../images/white.png" alt="logo"><!--This is an image-->
+					<nav><!--The nav tags have the same function as the header-->
+						<ul><!--This creates an unordered(bulleted) list-->
+							<li><a href="main.html">Main</a></li><!--This is a list item, inside is a clickable link-->
+							<li><a href="help.html">Help</a></li>
+							<li><a href="commands.html" style="color: rgb(230, 150, 150);">Commands</a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+		</div>
+
+
+		<div class="content">
+			<p style="font-weight: 300;"><!--This is the content-->
+			 The basic commands you need to know are listed here. Though for simplicity and readers sake they will not have the prefix '!' in front of them although it needs to be included when typing the command in the discord chat.
+			 <br><!--this breaks the text, similarly to pressing the enter key in a text document-->
+			</p>
+			<ul>
+				<li><strong>prefix [new prefix]</strong>  -  Sets the new server prefix (server owner command)</li>
+				<li><strong>dm | dm [enable/disable]</strong>  -  Tells you if you are allowing private messages from Jurassic Bot (to inform if health is low etc) / enable and disable them</li>
+				<li><strong>upgrade [skill] [amount]</strong>  -  Upgrades the skill of your choice by the amount that you want</li>
+				<li><strong>downgrade [skill] [amount]</strong>  -  Downgrades the skill of your choice by the amount that you want, gives you credits</li>
+				<li><strong>den</strong>  -  Check the statistics of your den</li>
+				<li><strong>build</strong>  -  Build a den that you can use to hide from enemies and avoid fighting</li>
+				<li><strong>advance</strong>  -  Upgrade your den, does not take any parameters</li>
+				<li><strong>heal</strong>  -  Heal your den, also does not take any parameters</li>
+				<li><strong>accept</strong>  -  Accept a duel from a person</li>
+				<li><strong>decline</strong>  -  Decline a duel from a person</li>
+				<li><strong>run</strong>  -  Escape a duel with a person</li>
+				<li><strong>time</strong>  -  Check the amount of time until your duel is over</li>
+				<li><strong>attack/fight</strong>  -  Request to fight somebody</li>
+				<li><strong>strike</strong>  -  Hitting somebody in a fight</li>
+				<li><strong>defend</strong>  -  Defending from a persons strike</li>
+				<li><strong>hibernate/sleep [time minutes]</strong>  -  While you're asleep nobody can attack you</li>
+				<li><strong>hunt</strong>  -  Hunt for food, only for carnivores and omnivores</li>
+				<li><strong>graze</strong>  -  Collect vegetation, only for herbivores</li>
+				<li><strong>eat [amount] [foodtype if omnivore]</strong>  -  Just "!eat [amount]" for non omnivores, omnivores must specify foodtype</li>
+				<li><strong>balance/bal</strong>  -  Check the amount of money, dna, credits food and materials you have</li>
+				<li><strong>stats</strong>  -  Check the statistics of your current dinosaur</li>
+				<li><strong>select</strong>  -  Purchase a new dinosaur. Remember that you will have to repurchase current one if you want to use it again although you will keep your stats</li>
+				<li><strong>purchase [id/color]</strong>  -  Purchase new colors, you can add a space between colors and purchase as many as you would like in the same command</li>
+				<li><strong>buy [item/id] [amount]</strong>  -  Purchase items from the item shop</li>
+				<li><strong>colors</strong>  -  View all of the color you have</li>
+				<li><strong>colorshop</strong>  -  View all of the colors you wish you had</li>
+				<li><strong>itemshop</strong>  -  View all of the items available for purchase</li>
+				<li><strong>view</strong>  -  Take peek at what you look like</li>
+				<li><strong>customize [main color] [underbelly color] [pattern color] [eye color]</strong>  -  Make yourself look good :)</li>
+				<li><strong>image [dinosaur, color1, color2, color3, color4]</strong>  -  View what a dinosaur would look like with a specific color pattern</li>
+				<li><strong>image [dinosaur] random</strong>  -  Look at a randomized color pattern of a certian dinosaur</li>
+				<li><strong>images</strong>  -  View your custom dinosaur images</li>
+			</ul>
+		</div>
+		
+		<script src="../external/script.js"></script><!--This imports the script from the external link specified-->
+	</body>
+</html>

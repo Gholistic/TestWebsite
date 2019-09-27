@@ -1,0 +1,69 @@
+<!DOCTYPE html><!--This declares that the document is an HTML file-->
+<html lang="en"><!--This is the opening of the html. It's where the html code starts-->
+	<head><!--This is the behind the scenes stuff-->
+		<meta charset="utf-8"/>
+		<title>Help | Jurassic Bot</title><!--This sets the title of the website which can be seen in the tab-->
+		<link rel="icon" href="../images/icon.png"><!--This sets the tab icon of the website-->
+		<link rel="stylesheet" href="../external/style.css"><!--This links the external css file to this website-->
+	</head>
+
+
+	<body><!--This is the start of the visible stuff-->
+		<header class = "title"><!--This is similar to a div, it works as a container to hold the title. It has the class title so it can be edited with css-->
+			<div><!--this is a div, a container than can be edited independently in css but still works within the bounds of it's outer container-->
+				<h1><!--this is the first heading-->
+					Jurassic Bot
+				</h1>
+
+				<h2><!--this is the second heading-->
+					Help page
+				</h2>
+			</div>
+		</header>
+
+		<div class = "pad">
+			<header id = "nav" style="border-bottom: 8px solid rgb(255, 205, 205);"><!--this header has the id nav so it can be styled in css. It has custom css which creates a border-->
+				<div class="container">
+					<img class="logo" src="../images/white.png" alt="logo"><!--This is an image-->
+					<nav><!--The nav tags have the same function as the header-->
+						<ul><!--This creates an unordered(bulleted) list-->
+							<li><a href="main.html">Main</a></li><!--This is a list item, inside is a clickable link-->
+							<li><a href="help.html" style="color: rgb(230, 150, 150);">Help</a></li>
+							<li><a href="commands.html">Commands</a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+		</div>
+
+		
+		<div class="image">
+			<a href="../images/screenshot3.png"><img src="../images/screenshot3.png" alt="invite"></a>
+			<a href="../images/screenshot4.png"><img src="../images/screenshot4.png" alt="add to server"></a>
+			<a href="../images/screenshot5.png"><img src="../images/screenshot5.png" alt="not a robot"></a>
+			<a href="../images/screenshot6.png"><img src="../images/screenshot6.png" alt="finished"></a>
+		</div>
+
+		<div class="content">
+			<p><!--This is the content-->
+				 For enquiries and bot ideas feel free to contact me @RyAn#2110 on discord or email rjskent@gmail.com 
+				 <br><!--this breaks the text, similarly to pressing the enter key in a text document-->
+				 <br>
+				In order to invite the bot you will need to click this
+				<a href="https://discordapp.com/api/oauth2/authorize?client_id=575626393396707329&permissions=8&scope=bot" target="_blank" class="link">link</a>
+				, select a server, accept the permissions and click add to server. It is to be noted that you may only invite the bot to servers you’re the owner or admin of.
+				<br>
+				<br>
+				<strong>Follow the images on the right --></strong>
+				<br>
+				<br>
+				In terms of money, there are a few commands that can get you money. Although money is only used for buying colours, it can also be used to convert into things like food, dna and credits by using the !sell command. You buy new dinosaurs with DNA but you also can upgrade them using credits, which can be gained when you level up or purchased for a lot of money. You level up by fighting, and hunting. 
+				<br>
+				<br>
+				If you don’t want to use ! in front of every command, you can use !prefix [new prefix]. Just know that only the owner of a server can use this command.
+			</p>
+		</div>
+
+		<script src="../external/script.js"></script><!--This imports the script from the external link specified-->
+	</body>
+</html>

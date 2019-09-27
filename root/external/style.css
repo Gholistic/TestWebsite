@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+/*these imports allow me to use google fonts*/
+/*background-image: url(../images/background2.png);*/
+
+body {/*this affects the body of the document*/
+	margin: 0;/*this sets the margin. setting it to 0 means that it removes the margin that originally pushes the content into the center.*/
+	background-repeat: repeat;/*this allows the background of the document to repeat when the image doesn't cover the whole background*/
+	background-size: 100%;/*this changes the width of the background, it allows the image to cover the background horizontally*/
+}
+
+.container {/*this is a custom class. if any tags have this class specified they will use the css inside of the curley braces*/
+	margin: 0 auto;/*the auto means that the sides will push the container into the center*/
+	width: 75%;/*this sets the width. it sets it to to 75% of the documents width*/
+}
+
+.pad{
+	height: 100px;/*this sets the height of the using element*/
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;/*sets the position. fixed means that it will not be influenced or influence other objects*/
+  top: 0;/*positions element at the top of the screen*/
+  width: 100%;
+  z-index: 1;/*brings the element to the front relative to other elements */
+}
+
+.title {
+	background-color: darkred;/*sets the background color, in this case dark red*/
+}
+
+.title div{/*focuses on the div inside of the title class*/
+	width: 75%;
+	margin: auto;
+}
+
+.title div h1{
+	font-family: 'Anton', sans-serif;/*sets the font, and the style of the font*/
+	font-size: 50px;/*sets the size of the font*/
+	text-shadow: 3px 3px black;/*sets the shadow of the text, reflecting shadows in real life*/
+	color: white;/*sets the color of the text*/
+}
+
+.title div h2{
+	font-family: 'Baloo Bhai', cursive;
+	font-size: 35px;
+	color: white;
+}
+
+header {
+	background: rgb(170,20,20);/*sets the background to a color*/
+	padding: 20px;/*sets the padding, similar to a margin but it increases the background size*/
+	margin: 0;
+}
+
+.logo {
+	
+	width: 100px;
+	transition:350ms;/*animation time*/
+	opacity: 0.65;/*transparency, how visible/invisible*/
+	
+}
+
+.logo:hover{/*:hover means that this will only take into affect when something that contains the .logo class in hovered over by a mouse*/
+	width: 150px;
+	opacity: 1;
+	transition: 100ms;
+}
+
+nav {	
+	float: right;/*similar to doing position: absolute; and text-align: right; It moves it to the right of the screen and makes it float over other elements*/
+	margin: 0;
+}
+
+nav ul{
+	float: right;
+    list-style: none;/*removes styling associated with lists, such as bullet points, etc*/
+}
+
+
+nav li a{
+	font-family: 'Roboto', sans-serif;
+	text-decoration: none;/*removes text decoration like underlines etc*/
+	transition: 0.5s;
+	color: white;
+	padding: 10px;
+}
+
+nav li a:hover{
+	transition: 100ms;
+	color: rgb(255, 200, 200);/*rgb() sets a custom rgb color that I can manipulate however I want, including the opacity*/
+}
+
+nav li{
+	float: left;
+	transition: 600ms;
+	background-color: rgb(170,20,20);
+	padding: 10px 0 10px 0; 
+}
+
+nav li:hover {
+	transition: 0.2s;
+    background-color: rgb(200, 20, 20);
+
+}
+
+.content p {
+	padding-top: 25px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 25px;
+	text-align: justify;/*makes text paragraphs look like blocks as opposed to being messy*/
+
+}
+
+.content li {
+	margin-top: 15px;
+}
+
+.content {
+	width: 75%;
+	margin: 0 auto;
+}
+
+.image {
+	width: 25%;
+	float: right;
+	margin-top: 34px;
+}
+.image img{
+	margin: 20px;
+    width: 350px;
+    transition: 0.2s;
+    border-style: solid;/*makes the border of the element a solid color, there is no pattern or light sides*/
+    border-width: 10px;/*sets the outside border width*/
+    border-color: rgb(20, 20, 20);/*sets the color of the border*/
+    background-color: black;/*sets the color of the background*/
+}
+
+.image img:hover{
+	transition: 50ms;
+	border-color: rgb(90, 90, 90);
+	border-left-color: rgb(120, 120, 120);
+    border-width: 20px;
+    margin: 10px;
+    opacity: 0.7;
+    cursor: pointer;/*sets the mouse to a pointing hand*/
+}
+
+.link {
+	color: rgb(150, 200, 200);
+	text-decoration: none;
+	transition: 0.5s;
+}
+
+.link:visited {/*sets the style only when the element with this class is in the history of the user*/
+	color: purple;
+}
+
+.link:hover {
+	transition: 150ms;
+	color: rgb(255, 150, 150);
+}
+
+.content ul li{
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	text-align: justify;
+}
+
+.button button {
+	padding: 20px 40px;
+	font-size: 20px;
+	font-weight: 600;/*sets the thickness of the text*/
+	float: right;
+}
+
+.button {
+	width: 80%; 
+	margin: 0 auto;
+}
+
+.img2{
+	width: 80%; 
+	margin: 0 auto;
+    text-align: center;
+}

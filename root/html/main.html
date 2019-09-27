@@ -1,0 +1,71 @@
+<!DOCTYPE html><!--This declares that the document is an HTML file-->
+<html lang="en"><!--This is the opening of the html. It's where the html code starts-->
+	<head><!--This is the behind the scenes stuff-->
+		<meta charset="utf-8"/>
+		<title>Main | Jurassic Bot</title><!--This sets the title of the website which can be seen in the tab-->
+		<link rel="icon" href="../images/icon.png"><!--This sets the tab icon of the website-->
+		<link rel="stylesheet" href="../external/style.css"><!--This links the external css file to this website-->
+	</head>
+
+
+	<body><!--This is the start of the visible stuff-->
+		<header class = "title"><!--This is similar to a div, it works as a container to hold the title. It has the class title so it can be edited with css-->
+			<div><!--this is a div, a container than can be edited independently in css but still works within the bounds of it's outer container-->
+				<h1><!--this is the first heading-->
+					Jurassic Bot
+				</h1>
+
+				<h2><!--this is the second heading-->
+					Main page
+				</h2>
+			</div>
+		</header>
+
+		<div class = "pad">
+			<header id = "nav" style="border-bottom: 8px solid rgb(255, 205, 205);"><!--this header has the id nav so it can be styled in css. It has custom css which creates a border-->
+				<div class="container" id="container">
+					<img class="logo" src="../images/white.png" alt="logo">
+					<nav><!--The nav tags have the same function as the header-->
+						<ul><!--This creates an unordered(bulleted) list-->
+							<li><a href="main.html" style="color: rgb(230, 150, 150);">Main</a></li><!--This is a list item, inside is a clickable link-->
+							<li><a href="help.html">Help</a></li>
+							<li><a href="commands.html">Commands</a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+		</div>
+
+		
+		<div class="image">
+			<a href="../images/screenshot1.png"><img src="../images/screenshot1.png" alt="stats"></a>
+			<a href="../images/screenshot2.png"><img src="../images/screenshot2.png" alt="image"></a>
+		</div>
+
+		<div class="content"><!--This is the content-->
+			
+			<p>
+			 	Welcome to the park... No, Jurassic Bot is not related to Jurassic Park &trade; in any way apart from the name &#129313;
+			 	<br>
+			 	<br>
+				Jurassic Bot is an economy discord bot featuring a range of commands, and packed with customizability. To get started, visit <a href="commands.html" class="link">commands</a> and and try some out some commands for yourself!
+				<br>
+				<br>
+				You play as a dinosaur where you can hunt, eat and my favorite yet, sleep. You can gain currency in the form of DNA and use it to purchase better, bigger, faster and stronger dinosaurs. You can also use in game money to purchase colors and personalise your features. There are 4 body parts which you can set the colors of individually of each other, and view whenever you eat, fight, view your statistics etc.
+				<br>
+				<br>
+				You can request to fight somebody using the command !fight. They have 3 minutes to accept your fight request, if they choose to decline you will automatically start attacking their den. Your den is like a base, it’s where you sleep and take refuge when a predator that’s too fast to outrun tries to fight you. You can use the command !hibernate [time] (or !sleep [time] if you’re lazy) and nobody will be able to attack you. You can’t harm what you can’t see.
+				<br>
+				<br>
+				If you want to customize your dinosaur, you can use the command <i style="font-size: 20px;">!customize [main color] [underbelly color] [pattern color] [eye color]</i>. If you want to view what your or any other dinosaur would look like with a certain skin pattern before buying the colors or changing the color, you can use <i style="font-size: 20px;">!view [dinosaur] [main color] [underbelly color] [pattern color] [eye color]</i>
+				<br>
+				<br>
+				<br>
+
+			 </p>
+		</div>
+
+
+		<script src="../external/script.js"></script><!--This imports the script from the external link specified-->
+	</body>
+</html>
